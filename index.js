@@ -3,7 +3,7 @@ let Wordclock;
 var primary = "#ffffff"; //255
 var secondary = "#282828"; //40
 var back = "#000000"; //0
-let imageBackground = false;
+let imageBackground = false; //turns background image on or off
 
 let d = new Date();
 let hour = d.getHours();
@@ -16,6 +16,7 @@ let day = d.getDay();
 let JSONResponse;
 let JSONParsed;
 
+//LIFX token needed to sync with lights. You can get a token via the LIFX website.
 const token = '';
 
 function trimLastMinuteDigit(input) {
@@ -25,12 +26,13 @@ function trimLastMinuteDigit(input) {
 }
 
 function preload() {
+    //due to an issue with the "Wordclock" font, only one character
+    //can be drawn with the text method at a time
     Wordclock = loadFont('Wordclock.otf');
+
+    //a template used to properly align characters
     img = loadImage('template combinations/qlocktwotemplatev2 1,2,3,13,14,21,22,23,31.jpg');
 }
-
-//due to an issue with the "Wordclock" font, only one character
-//can be drawn with the text method at a time
 
 function drawBase() {
     fill(secondary);
@@ -1604,8 +1606,6 @@ function draw() {
                 drawBase();
                 drawCurrentTime();
             }
-
         }).catch(error => console.error('Error', error))
     // }
-
 }
