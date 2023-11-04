@@ -12,10 +12,19 @@ I love the aesthetic of a QLOCKTWO. The problem: they are **very expensive**. I 
 ## The Software
 - A python webserver
 - p5.js as a graphics engine
+- LIFX API for theme integration
 - Firefox running in kiosk mode
 - Debian Linux
 
-The laptop is running an instance of Debian Linux set to launch this web app (in kiosk mode) on startup.
+Originally, I only recreated a QLOCKTWO in p5.js
+
+<img src="https://github.com/iamjohnmeyers/QLOCKTWO-2/assets/25084859/7e6f57ae-bdf3-465b-8da0-08de2f3aada9" width=40% height=40%>
+
+But, once I decided I was going to buy a 16:9 TV, I wanted to create something more unique. I added more complications while staying true to the original QLOCKTWO aesthetic.
+
+The laptop is running an instance of Debian Linux set to launch this web app (in kiosk mode) on startup. On startup the mouse is hidden, the desktop orientation is rotated, and a Python webserver is started to host the project. The web app was made using the p5.js graphics library. There is integration with the LIFX API to dynamically control the theme of the app using the lighting in my room.
+
+The actual QLOCKTWO 2, is a bit of a façade. While I wanted to stay true to the original QLOCKTWO aesthetic, it was not possible to include dates unless I cheated a bit. There are actually 4 different layouts for the QLOCKTWO 2. Listed above each layout is the combination of dates used in the layout.
 
 ![](https://github.com/iamjohnmeyers/QLOCKTWO-2/assets/25084859/2435684d-0ebd-4527-a20e-cd034038cd6f)
 
@@ -27,10 +36,12 @@ The laptop is running an instance of Debian Linux set to launch this web app (in
 
 I originally used a Libre Computer Le Potato to run this application, but after experiencing issues with the GUI soft locking, I transitioned over to a cheap 11" Lenovo laptop with an Intel Atom chip. I haven't had problems since.
 
-![](https://github.com/iamjohnmeyers/QLOCKTWO-2/assets/25084859/c55ddbb0-0d33-40f7-b22d-3e73885e5dd3)
+<img src="https://github.com/iamjohnmeyers/QLOCKTWO-2/assets/25084859/eb3cf1cc-dca8-4cc6-8512-30c7c78d8558" width=25% height=25%>
 
 ## Legal
 I should add, that I do not intend to infringe on QLOCKTWO's copyright. This product is not for sale and was created for my own personal use.
 
 The font used for the project is called "Wordclock". It was created by Matthieu Rudelle on GitHub:
 https://github.com/mrudelle/wordclock-stencil-mono
+
+![](https://github.com/iamjohnmeyers/QLOCKTWO-2/assets/25084859/c55ddbb0-0d33-40f7-b22d-3e73885e5dd3)
