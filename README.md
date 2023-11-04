@@ -36,6 +36,8 @@ The actual QLOCKTWO 2, is a bit of a façade. While I wanted to stay true to the
 
 I originally used a Libre Computer Le Potato to run this application, but after experiencing issues with the GUI soft locking, I transitioned over to a cheap 11" Lenovo laptop with an Intel Atom chip. I haven't had problems since.
 
+I the QLOCKTWO 2 will also shut down when lights are turned off in the room. This is done with a smart outlet and two Google Assistant automations.
+
 <img src="https://github.com/iamjohnmeyers/QLOCKTWO-2/assets/25084859/eb3cf1cc-dca8-4cc6-8512-30c7c78d8558" width=25% height=25%>
 
 ## Legal
